@@ -1,0 +1,26 @@
+{
+  "name": "gamifythink-prj",
+  "version": "1.0.0",
+  "description": "Frontend for gamifythink website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass -w src/scss -o public/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danivideda/gamifythink-prj.git"
+  },
+  "keywords": [
+    "gamifythink"
+  ],
+  "author": "Dani Ihza Farrosi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danivideda/gamifythink-prj/issues"
+  },
+  "homepage": "https://github.com/danivideda/gamifythink-prj#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

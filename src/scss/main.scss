@@ -1,11 +1,22 @@
-$bg-color: #ca5353;
-
-body {
-  background-color: $bg-color;
-}
-
 nav {
-  #brand {
-    display: inline;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  height: 100px;
+
+  #main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    
+
+    #brand {
+      font-size: 3rem;
+    }
+  
+    
   }
+  
+  
 }

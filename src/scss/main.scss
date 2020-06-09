@@ -19,6 +19,7 @@ body { // test
 
 // Utilities
 .text-heading {
+  display: inline-block;
   color: var(--redish-light);
   outline-width: medium;
   outline-color: #333;
@@ -34,17 +35,29 @@ body { // test
 
 .btn {
   display: inline-block;
-  background: linear-gradient(119.38deg, #FE5722 10.48%, #DD2C00 96.57%);
+  // background: linear-gradient(119.38deg, #FE5722 10.48%, #DD2C00 96.57%);
+  background-color: var(--redish-light);
   border-radius: 15px;
   padding: 0.3rem 1.5rem;
   text-decoration: none;
   color: #fff;
   transition: all 0.3 ease;
 
-  &:hover::after {
-    content: '';
-    background-color: rgba(0, 0, 0, 0.25);
-    color: #333;
+  &-primary {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    margin: 1rem 2rem;
+    padding: 1rem 2rem;
+    border: none;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  &:hover {
+    background-color: #fff;
+    color: var(--redish-light);
   }
 }
 
@@ -73,6 +86,12 @@ nav {
     #brand {
       height: 100%;
       margin-left: -20px;
+    }
+
+    #btn-login {
+      // position: relative;
+      // margin-left: 70px;
+      align-self: center;
     }
 
     ul {
@@ -134,15 +153,27 @@ nav {
     // margin-left: 10rem;
     margin: 20% 5px;
 
+    .text-heading {
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 0.3rem 1rem;
+      text-align: center;
+    }
+
     p {
       font-family: 'Nunito';
       font-size: 1.4rem;
       color: #fff;
+    }
+
+    #btn-register {
+      margin-top: 3rem;
+      margin-left: 0.5rem;
     }
   }
 }
 
 #about {
   min-height: 100vh;
-
+  background-image: url('');
 }

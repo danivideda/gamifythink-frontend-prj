@@ -1,12 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap");
+body {
+  background-color: #f4f4f4;
+  font-family: 'Poppins',Arial, Helvetica, sans-serif;
+  line-height: 1.3; }
+
+:root {
+  --blue-bright: #00BCD5;
+  --blue-light: #B2EBF2;
+  --redish-primary: #DD2C00;
+  --redish-light: #FE5722;
+  --nav-color: #3B749F; }
+
+.text-heading {
+  color: #F9511D;
+  outline-width: medium;
+  outline-color: #333;
+  font-size: 2rem;
+  font-weight: bolder; }
+
+.lead-heading {
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 700; }
+
 nav {
+  position: fixed;
+  top: 0;
   width: 100%;
-  background-color: #333;
-  color: white;
-  height: 100px; }
-  nav #main-nav {
+  min-height: 40px;
+  z-index: 1; }
+  nav #nav-content {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%; }
-    nav #main-nav #brand {
-      font-size: 3rem; }
+    justify-content: space-between; }
+    nav #nav-content #brand {
+      width: 200px; }
+    nav #nav-content ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      margin: 0px 15px;
+      padding: 0; }
+    nav #nav-content li {
+      padding: 1rem 0.5rem; }
+    nav #nav-content a {
+      padding: 1rem 0.5rem;
+      text-decoration: none;
+      color: #fff;
+      border-bottom: 3px transparent solid;
+      transition: border-color 0.3s; }
+      nav #nav-content a:hover {
+        border-color: var(--blue-bright); }
+      nav #nav-content a.current {
+        border-color: var(--redish-light); }
+
+#main-heading {
+  position: relative;
+  height: 700px;
+  background: linear-gradient(307.25deg, #1C537C 13.48%, #91D0FF 119.98%);
+  overflow: hidden; }
+  #main-heading img {
+    position: absolute;
+    right: 0;
+    min-height: 100%; }
+  #main-heading .content {
+    position: realtive;
+    width: 40%;
+    left: 0;
+    top: 50px;
+    margin: 20% 5px; }
+    #main-heading .content p {
+      font-family: 'Nunito';
+      font-size: 1.4rem;
+      color: #fff; }

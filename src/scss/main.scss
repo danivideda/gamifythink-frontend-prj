@@ -19,7 +19,7 @@ body { // test
 
 // Utilities
 .text-heading {
-  color: #F9511D;
+  color: var(--redish-light);
   outline-width: medium;
   outline-color: #333;
   font-size: 2rem;
@@ -32,11 +32,34 @@ body { // test
   font-weight: 700;
 }
 
+.btn {
+  display: inline-block;
+  background: linear-gradient(119.38deg, #FE5722 10.48%, #DD2C00 96.57%);
+  border-radius: 15px;
+  padding: 0.3rem 1.5rem;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3 ease;
+
+  &:hover::after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #333;
+  }
+}
+
 nav {
+  &.nav-scrolling-active {
+    box-shadow: 6px 0px 8px rgba(0, 0, 0, 0.25);
+    background-color: var(--nav-color);
+    height: 3rem;
+  }
+
   position: fixed;
   top: 0;
   width: 100%;
-  min-height: 40px;
+  height: 4.6rem;
+  transition: all 0.2s ease-out;
   // THESE STYLING ONLY ACTIVATE AFTER SCROLLING DOWN
   // box-shadow: 6px 0px 8px rgba(0, 0, 0, 0.25);
   // background-color: var(--nav-color);
@@ -45,9 +68,11 @@ nav {
   #nav-content {
     display: flex;
     justify-content: space-between;
+    height: 100%;
 
     #brand {
-      width: 200px;
+      height: 100%;
+      margin-left: -20px;
     }
 
     ul {
@@ -58,26 +83,32 @@ nav {
       list-style: none;
       margin: 0px 15px;
       padding: 0;
+      height: 100%;
       
     }
     
     li {
-          padding: 1rem 0.5rem;
-    }
+      padding: 0 0.5rem;
 
-    a {
-      padding: 1rem 0.5rem;
-      text-decoration: none;
-      color: #fff;
-      border-bottom: 3px transparent solid;
-      transition: border-color 0.3s;
-
-      &:hover {
-        border-color: var(--blue-bright);
-      }
-
-      &.current {
-        border-color: var(--redish-light);
+      a {
+        // &.items-scrolling-active {
+        //   padding: 0.2rem 0.5rem;
+        // }
+    
+        height: 100%;
+        padding: 0.5rem 0.5rem;
+        text-decoration: none;
+        color: #fff;
+        border-bottom: 3px transparent solid;
+        transition: all 0.3s ease;
+    
+        &:hover {
+          border-color: #fff;
+        }
+    
+        &.current {
+          border-color: var(--redish-light);
+        }
       }
     }
   }
@@ -97,7 +128,7 @@ nav {
 
   .content {
     position: realtive;
-    width: 40%;
+    width: 45%;
     left: 0;
     top: 50px;
     // margin-left: 10rem;
@@ -109,4 +140,9 @@ nav {
       color: #fff;
     }
   }
+}
+
+#about {
+  min-height: 100vh;
+
 }

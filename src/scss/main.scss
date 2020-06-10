@@ -25,6 +25,10 @@ body { // test
   outline-color: #333;
   font-size: 2rem;
   font-weight: bold;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 0.3rem 1rem;
+  text-align: center;
 }
 
 .lead-heading {
@@ -150,13 +154,6 @@ nav {
     margin: 15% 0px;
     padding-right: 5%;
 
-    .text-heading {
-      background-color: #fff;
-      border-radius: 15px;
-      padding: 0.3rem 1rem;
-      text-align: center;
-    }
-
     p {
       font-family: 'Nunito';
       font-size: 1.4rem;
@@ -248,17 +245,44 @@ nav {
   }
 
   .content {
-    display: flex;
-    margin-top: 200px;
+    // display: flex;
+    // flex-direction: column;
+    margin-top: 100px;
+    position: relative;
 
-    &-left {
+
+
+    &-visi {
       position: relative;
-      width: 50%;
+      width: 70%;
+      margin-bottom: 3rem;
+
+      p {
+        font-size: 1.8rem;
+        color: #fff;
+        font-family: 'Nunito';
+      }
     }
 
-    &-right {
-      position: relative;
-      width: 50%;
+    &-misi {
+      position: absolute;
+      right: 0;
+      width: 70%;
+      margin-bottom: 3rem;
+
+      ul {
+        list-style: none;
+        color: #fff;
+
+        li {
+          font-size: 1.4rem;
+          width: 100%;
+          margin: 10px auto;
+          font-family: 'Nunito';
+          padding-bottom: 1rem;
+          border-bottom: 2px solid rgb(196, 196, 196);
+        }
+      }
     }
   }
 

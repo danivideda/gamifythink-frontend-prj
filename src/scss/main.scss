@@ -47,8 +47,8 @@ body { // test
     position: relative;
     display: inline-block;
     width: 200px;
-    margin: 1rem 2rem;
-    padding: 1rem 2rem;
+    margin: 1rem 0;
+    padding: 1rem 0;
     border: none;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
@@ -144,12 +144,11 @@ nav {
   }
 
   .content {
-    position: realtive;
+    position: relative;
     width: 45%;
-    left: 0;
-    top: 50px;
     // margin-left: 10rem;
-    margin: 20% 5px;
+    margin: 15% 0px;
+    padding-right: 5%;
 
     .text-heading {
       background-color: #fff;
@@ -166,17 +165,17 @@ nav {
 
     #btn-register {
       margin-top: 3rem;
-      margin-left: 0.5rem;
+      // margin-left: 0.5rem;
     }
   }
 }
 
 #about {
   position: relative;
-  min-height: 100vh;
+  min-height: 800px;
   overflow: hidden;
 
-  img {
+  #flower {
     position: absolute;
     right: 0;
     top: -5px;
@@ -187,22 +186,51 @@ nav {
     position: relative;
     width: 100%;
     height: 100%;
-    margin-top: 5rem;
+    margin-top: 5%;
+    padding-right: 15%;
 
-    img {
+    #userflow {
       display: block;
-      width: 100%;
+      width: 70%;
+      margin-bottom: 2rem;
     }
     
     .lead-heading {
       color: var(--redish-light);
       font-size: 2rem;
+      margin-bottom: 1.5rem;
     }
 
     p {
       font-family: 'Nunito';
       font-size: 1.4rem;
       color: var(--blue-dark);
+
+      &.description {
+        padding-right: 15%;
+        margin-bottom: 2rem;
+      }
+    }
+
+    #userflow-description {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      color: var(--blue-dark);
+
+      .item {
+        // width: 33%;
+        padding-right: 10px;
+
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
     }
   }
 

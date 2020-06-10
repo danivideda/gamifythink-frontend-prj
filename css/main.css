@@ -18,7 +18,11 @@ body {
   outline-width: medium;
   outline-color: #333;
   font-size: 2rem;
-  font-weight: bold; }
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 0.3rem 1rem;
+  text-align: center; }
 
 .lead-heading {
   color: #fff;
@@ -103,11 +107,6 @@ nav {
     width: 45%;
     margin: 15% 0px;
     padding-right: 5%; }
-    #main-heading .content .text-heading {
-      background-color: #fff;
-      border-radius: 15px;
-      padding: 0.3rem 1rem;
-      text-align: center; }
     #main-heading .content p {
       font-family: 'Nunito';
       font-size: 1.4rem;
@@ -168,14 +167,31 @@ nav {
     left: 0;
     height: 100%; }
   #visi-misi .content {
-    display: flex;
-    margin-top: 200px; }
-    #visi-misi .content-left {
+    margin-top: 100px;
+    position: relative; }
+    #visi-misi .content-visi {
       position: relative;
-      width: 50%; }
-    #visi-misi .content-right {
-      position: relative;
-      width: 50%; }
+      width: 70%;
+      margin-bottom: 3rem; }
+      #visi-misi .content-visi p {
+        font-size: 1.8rem;
+        color: #fff;
+        font-family: 'Nunito'; }
+    #visi-misi .content-misi {
+      position: absolute;
+      right: 0;
+      width: 70%;
+      margin-bottom: 3rem; }
+      #visi-misi .content-misi ul {
+        list-style: none;
+        color: #fff; }
+        #visi-misi .content-misi ul li {
+          font-size: 1.4rem;
+          width: 100%;
+          margin: 10px auto;
+          font-family: 'Nunito';
+          padding-bottom: 1rem;
+          border-bottom: 2px solid #c4c4c4; }
   #visi-misi .lead-heading {
     color: var(--redish-light);
     font-size: 2rem; }

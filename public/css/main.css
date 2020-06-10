@@ -152,8 +152,30 @@ nav {
       text-align: left;
       color: var(--blue-dark); }
       #about .content #userflow-description .item {
-        padding-right: 10px; }
+        padding-right: 7px; }
         #about .content #userflow-description .item h1 {
           font-size: 1.5rem; }
         #about .content #userflow-description .item p {
           font-size: 1rem; }
+
+#visi-misi {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(307.25deg, #1C537C 13.48%, #91D0FF 119.98%); }
+  #visi-misi #visi-flower {
+    position: absolute;
+    left: 0;
+    height: 100%; }
+  #visi-misi .content {
+    display: flex;
+    margin-top: 200px; }
+    #visi-misi .content-left {
+      position: relative;
+      width: 50%; }
+    #visi-misi .content-right {
+      position: relative;
+      width: 50%; }
+  #visi-misi .lead-heading {
+    color: var(--redish-light);
+    font-size: 2rem; }

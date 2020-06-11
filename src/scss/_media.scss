@@ -1,21 +1,44 @@
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { 
   nav {
-    
+    #nav-content {
+      align-items: center;
+      #brand {
+        height: 3rem;
+      }
+      ul {
+        display: none;
+      }
+    }
   }
- }
+
+  #main-heading {
+    #game {
+      height: 35%;
+    }
+
+    .content {
+      width: 100%;
+      padding-top: 10%;
+    }
+
+    #btn-register {
+      box-shadow: 1px 1px 3px #333;
+    }
+  }
+}
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) { 
   // 
- }
+}
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) { 
   // 
- }
+}
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) { 
   // 
- }
+}

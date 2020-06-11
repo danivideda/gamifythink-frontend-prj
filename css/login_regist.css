@@ -179,12 +179,19 @@ a:hover{
 	.container{
 		grid-gap: 5rem;
 	}
+	form {
+		margin-left: 0px;
+	}
 }
-
+@media screen and (max-width: 1440px) and (max-height: 990px) {
+	form{
+		margin-left: 200px;
+	}
+}
 @media screen and (max-width: 1000px){
 	form{
 		width: 290px;
-		margin-left: none;
+		margin-left: 0px;
 	}
 
 	.login-content h2{
@@ -212,6 +219,9 @@ a:hover{
 
 	.login-content{
 		justify-content: center;
+	}
+	form {
+		margin-left: 0px;
 	}
 }
 

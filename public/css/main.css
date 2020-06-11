@@ -114,7 +114,8 @@ nav {
       font-size: 1.4rem;
       color: #fff; }
     #main-heading .content #btn-register {
-      margin-top: 3rem; }
+      margin-top: 3rem;
+      box-shadow: 1px 1px 3px #333; }
 
 #about {
   position: relative;
@@ -131,10 +132,6 @@ nav {
     height: 100%;
     margin-top: 5%;
     padding-right: 15%; }
-    #about .content #userflow {
-      display: block;
-      width: 70%;
-      margin-bottom: 2rem; }
     #about .content .lead-heading {
       color: var(--redish-light);
       font-size: 2rem;
@@ -146,6 +143,10 @@ nav {
       #about .content p.description {
         padding-right: 15%;
         margin-bottom: 2rem; }
+    #about .content #userflow {
+      display: block;
+      width: 70%;
+      margin-bottom: 2rem; }
     #about .content #userflow-description {
       display: flex;
       justify-content: center;
@@ -154,6 +155,8 @@ nav {
       color: var(--blue-dark); }
       #about .content #userflow-description .item {
         padding-right: 7px; }
+        #about .content #userflow-description .item .icon {
+          display: none; }
         #about .content #userflow-description .item h1 {
           font-size: 1.5rem; }
         #about .content #userflow-description .item p {
@@ -161,13 +164,13 @@ nav {
 
 #visi-misi {
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
   overflow: hidden;
   background: linear-gradient(307.25deg, #1C537C 13.48%, #91D0FF 119.98%); }
   #visi-misi #visi-flower {
     position: absolute;
     left: 0;
-    height: 100%; }
+    height: 101%; }
   #visi-misi .content {
     margin-top: 100px;
     position: relative; }
@@ -185,6 +188,7 @@ nav {
       width: 70%;
       margin-bottom: 3rem; }
       #visi-misi .content-misi ul {
+        padding-left: 0;
         list-style: none;
         color: #fff; }
         #visi-misi .content-misi ul li {
@@ -193,7 +197,7 @@ nav {
           margin: 10px auto;
           font-family: 'Nunito';
           padding-bottom: 1rem;
-          border-bottom: 2px solid #c4c4c4; }
+          border-bottom: 1px dashed rgba(196, 196, 196, 0.4); }
   #visi-misi .lead-heading {
     color: var(--redish-light);
     font-size: 2rem; }
@@ -201,10 +205,19 @@ nav {
 footer {
   display: block;
   width: 100%;
-  height: 150px;
-  background-color: var(--blue-darker); }
+  background-color: var(--blue-darker);
+  overflow: hidden; }
+  footer .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px; }
+    footer .content .logo {
+      display: block;
+      height: 50%;
+      margin: 10px auto; }
 
-@media (max-width: 575.98px) {
+@media (max-width: 812.98px) {
   nav #nav-content {
     align-items: center; }
     nav #nav-content #brand {
@@ -216,5 +229,60 @@ footer {
   #main-heading .content {
     width: 100%;
     padding-top: 10%; }
-  #main-heading #btn-register {
-    box-shadow: 1px 1px 3px #333; } }
+    #main-heading .content .text-heading {
+      font-size: 1.4rem; }
+    #main-heading .content #btn-register {
+      font-size: 1.3rem;
+      width: 150px;
+      font-weight: 300; }
+  #about #flower {
+    display: none; }
+  #about .content {
+    margin-top: 10%;
+    padding-right: 0; }
+    #about .content .lead-heading {
+      text-align: center;
+      padding: 0 20px; }
+    #about .content p {
+      font-size: 1rem; }
+      #about .content p.description {
+        padding: 0 10px;
+        text-align: center; }
+    #about .content #userflow {
+      display: none;
+      width: 100%; }
+    #about .content #userflow-description {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+      #about .content #userflow-description .item {
+        text-align: center; }
+        #about .content #userflow-description .item .icon {
+          display: block;
+          height: 40%;
+          margin: 5px auto; }
+        #about .content #userflow-description .item h1 {
+          font-size: 1rem; }
+        #about .content #userflow-description .item p {
+          font-size: 0.7rem; }
+  #visi-misi {
+    height: unset; }
+    #visi-misi #visi-flower {
+      bottom: 0;
+      height: 100%;
+      left: -55%; }
+    #visi-misi .content {
+      margin-top: 50px; }
+      #visi-misi .content .content-visi {
+        width: 100%;
+        text-align: center; }
+        #visi-misi .content .content-visi p {
+          font-size: 1.3rem;
+          margin-top: 5px; }
+      #visi-misi .content .content-misi {
+        position: relative;
+        right: unset;
+        width: 100%;
+        text-align: center; }
+        #visi-misi .content .content-misi ul li {
+          font-size: 1.3rem; } }

@@ -151,6 +151,7 @@ nav {
     #btn-register {
       margin-top: 3rem;
       // margin-left: 0.5rem;
+      box-shadow: 1px 1px 3px #333;
     }
   }
 }
@@ -173,12 +174,6 @@ nav {
     height: 100%;
     margin-top: 5%;
     padding-right: 15%;
-
-    #userflow {
-      display: block;
-      width: 70%;
-      margin-bottom: 2rem;
-    }
     
     .lead-heading {
       color: var(--redish-light);
@@ -197,6 +192,12 @@ nav {
       }
     }
 
+    #userflow {
+      display: block;
+      width: 70%;
+      margin-bottom: 2rem;
+    }
+
     #userflow-description {
       display: flex;
       justify-content: center;
@@ -207,6 +208,10 @@ nav {
       .item {
         // width: 33%;
         padding-right: 7px;
+
+        .icon {
+          display: none;
+        }
 
         h1 {
           font-size: 1.5rem;
@@ -222,14 +227,14 @@ nav {
 
 #visi-misi {
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
   overflow: hidden;
   background: linear-gradient(307.25deg, #1C537C 13.48%, #91D0FF 119.98%);
 
   #visi-flower {
     position: absolute;
     left: 0;
-    height: 100%;
+    height: 101%;
   }
 
   .content {
@@ -259,6 +264,7 @@ nav {
       margin-bottom: 3rem;
 
       ul {
+        padding-left: 0;
         list-style: none;
         color: #fff;
 
@@ -268,7 +274,7 @@ nav {
           margin: 10px auto;
           font-family: 'Nunito';
           padding-bottom: 1rem;
-          border-bottom: 2px solid rgb(196, 196, 196);
+          border-bottom: 1px dashed rgba(196, 196, 196, 0.4);
         }
       }
     }
@@ -284,8 +290,23 @@ nav {
 footer {
   display: block;
   width: 100%;
-  height: 150px;
+  // height: 100px;
   background-color: var(--blue-darker);
+  overflow: hidden;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+
+    .logo {
+      display: block;
+      height: 50%;
+      margin: 10px auto;
+    }
+  }
+
 }
 
 @import "media";

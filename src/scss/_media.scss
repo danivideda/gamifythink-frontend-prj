@@ -1,5 +1,6 @@
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { 
+// CHANGED TO 812.98px, because for landscape too
+@media (max-width: 812.98px) { 
   nav {
     #nav-content {
       align-items: center;
@@ -20,10 +21,110 @@
     .content {
       width: 100%;
       padding-top: 10%;
+
+      .text-heading {
+        font-size: 1.4rem;
+      }
+
+      #btn-register {
+        font-size: 1.3rem;
+        width: 150px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  #about {
+    #flower {
+      display: none;
     }
 
-    #btn-register {
-      box-shadow: 1px 1px 3px #333;
+    .content {
+      margin-top: 10%;
+      padding-right: 0;
+      
+      .lead-heading {
+        text-align: center;
+        padding: 0 20px;
+      }
+
+      p {
+        font-size: 1rem;
+
+        &.description {
+          padding: 0 10px;
+          text-align: center;
+        }
+      }
+
+      #userflow {
+        display: none;
+        width: 100%;
+      }
+
+      #userflow-description {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .item {
+
+          text-align: center;
+
+          .icon {
+            display: block;
+            height: 40%;
+            margin: 5px auto;
+          }
+
+          h1 {
+            font-size: 1rem;
+          }
+  
+          p {
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+  }
+
+  #visi-misi {
+    height: unset;
+
+    #visi-flower {
+      bottom: 0;
+      height: 100%;
+      left: -55%;
+    }
+
+    .content {
+      margin-top: 50px;
+
+      .content-visi {
+        width: 100%;
+        text-align: center;
+
+        p {
+          font-size: 1.3rem;
+          margin-top: 5px;
+        }
+      }
+
+      .content-misi {
+        position: relative;
+        right: unset;
+        width: 100%;
+        text-align: center;
+
+        ul {
+          // padding-left: 0;
+
+          li {
+            font-size: 1.3rem;
+          }
+        }
+      }
     }
   }
 }

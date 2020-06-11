@@ -204,7 +204,7 @@ a:hover{
 	}
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1243px){
 	.container{
 		grid-template-columns: 1fr;
 	}

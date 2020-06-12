@@ -204,7 +204,6 @@ nav {
 
 #testimoni {
   position: relative;
-  min-height: 700px;
   overflow: hidden; }
   #testimoni #testi-flower {
     position: absolute;
@@ -215,16 +214,13 @@ nav {
     color: #FE5722;
     font-size: 2.4rem;
     margin-bottom: 1.5rem;
-    margin-top: 10%; }
+    margin-top: 3.4rem; }
   #testimoni .cards {
     display: grid;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     width: 100%;
-    grid-template-columns: repeat(6, 500px);
-    padding: 1rem 2rem;
-    margin: initial 2rem;
+    grid-template-columns: repeat(6, auto);
+    padding: 1rem 0rem;
+    margin: 2rem 0;
     overflow-x: scroll;
     scrollbar-width: none;
     /* scrollbar hide for firefox*/
@@ -234,19 +230,42 @@ nav {
       /* hide scrollbar for Chrome, safari, Opera*/
       display: none; }
     #testimoni .cards .card-item {
-      padding-right: 2rem; }
-      #testimoni .cards .card-item .border {
+      padding: 0 2rem;
+      width: 500px; }
+      #testimoni .cards .card-item .custom-border {
+        border: none;
+        position: relative;
         border-radius: 1rem;
         box-shadow: 6px 0px 8px rgba(0, 0, 0, 0.25);
-        padding: 2rem; }
-      #testimoni .cards .card-item .testimonial {
-        width: 100%;
-        padding: 0 2rem;
-        margin-bottom: 1.3rem;
-        color: #FE5722;
-        font-size: 2rem; }
-      #testimoni .cards .card-item .footer p {
-        margin: 0; }
+        padding: 2rem;
+        background-color: #fff; }
+        #testimoni .cards .card-item .custom-border #quote {
+          position: absolute;
+          top: 1rem;
+          left: 1rem;
+          height: 20px; }
+        #testimoni .cards .card-item .custom-border .testimonial {
+          width: 100%;
+          padding: 0 2rem;
+          margin-bottom: 1.3rem;
+          color: #3B749F;
+          font-size: 1.5rem; }
+        #testimoni .cards .card-item .custom-border .footer p {
+          margin: 0;
+          text-align: right; }
+          #testimoni .cards .card-item .custom-border .footer p.name {
+            font-size: 0.9rem; }
+          #testimoni .cards .card-item .custom-border .footer p.details {
+            font-size: 0.7rem;
+            color: #FE5722; }
+
+#contact {
+  position: relative;
+  height: 768px; }
+  #contact .lead-heading {
+    margin: 0 auto;
+    color: #3B749F;
+    font-size: 2rem; }
 
 footer {
   display: block;
@@ -314,8 +333,8 @@ footer {
   #visi-misi {
     height: unset; }
     #visi-misi #visi-flower {
-      bottom: 0;
-      height: 100%;
+      top: 0;
+      height: 103%;
       left: -55%; }
     #visi-misi .content {
       margin-top: 50px; }
@@ -331,4 +350,12 @@ footer {
         width: 100%;
         text-align: center; }
         #visi-misi .content .content-misi ul li {
-          font-size: 1.3rem; } }
+          font-size: 1.3rem; }
+  #testimoni #testi-flower {
+    left: 0;
+    width: 100%; }
+  #testimoni .lead-heading {
+    margin-top: 25%;
+    font-size: 2rem; }
+  #testimoni .cards .card-item {
+    width: 100vw; } }

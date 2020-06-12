@@ -308,21 +308,41 @@ nav {
 
   .cards {
     display: grid;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     width: 100%;
-    grid-template-columns: repeat(3, auto);
-    column-gap: 5%;
-    padding: 1rem 5%;
+    grid-template-columns: repeat(6, 500px);
+    padding: 1rem 2rem;
+    margin: initial 2rem;
+    overflow-x: scroll;
+    scrollbar-width: none; /* scrollbar hide for firefox*/
+    &::-webkit-scrollbar { /* hide scrollbar for Chrome, safari, Opera*/
+      display: none;
+    }
+    -ms-overflow-style: none; /* hide scrollbar for IE and Edge*/
 
-    .card-item {
-      border-radius: 1rem;
-      // background-color: #dbdbdb;
-      box-shadow: 6px 0px 8px rgba(0, 0, 0, 0.25);
+    .card-item { 
+      padding-right: 2rem;
+
+      .border {
+        border-radius: 1rem;
+        box-shadow: 6px 0px 8px rgba(0, 0, 0, 0.25);
+        padding: 2rem;
+      }
 
       .testimonial {
-        width: 80%;
-        margin: 0.5rem auto;
+        width: 100%;
+        padding: 0 2rem;
+        margin-bottom: 1.3rem;
         color: $redish-light;
         font-size: 2rem;
+      }
+
+      .footer {
+        p {
+          margin: 0;
+        }
       }
     }
   }

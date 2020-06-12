@@ -96,7 +96,7 @@ nav {
 
 #main-heading {
   position: relative;
-  height: 700px;
+  height: 768px;
   background: linear-gradient(307.25deg, #1C537C 13.48%, #91D0FF 119.98%);
   overflow: hidden; }
   #main-heading #game {
@@ -119,7 +119,7 @@ nav {
 
 #about {
   position: relative;
-  min-height: 100vh;
+  min-height: 768px;
   overflow: hidden; }
   #about #flower {
     position: absolute;
@@ -164,7 +164,7 @@ nav {
 
 #visi-misi {
   position: relative;
-  height: 100vh;
+  min-height: 768px;
   overflow: hidden;
   background: linear-gradient(307.25deg, #1C537C 13.48%, #91D0FF 119.98%); }
   #visi-misi #visi-flower {
@@ -201,6 +201,35 @@ nav {
   #visi-misi .lead-heading {
     color: var(--redish-light);
     font-size: 2rem; }
+
+#testimoni {
+  position: relative;
+  min-height: 700px;
+  overflow: hidden; }
+  #testimoni #testi-flower {
+    position: absolute;
+    right: 0;
+    top: -5px;
+    z-index: -1; }
+  #testimoni .lead-heading {
+    color: #FE5722;
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+    margin-top: 10%; }
+  #testimoni .cards {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 5%;
+    padding: 1rem 5%; }
+    #testimoni .cards .card-item {
+      border-radius: 1rem;
+      box-shadow: 6px 0px 8px rgba(0, 0, 0, 0.25); }
+      #testimoni .cards .card-item .testimonial {
+        width: 80%;
+        margin: 0.5rem auto;
+        color: #FE5722;
+        font-size: 2rem; }
 
 footer {
   display: block;

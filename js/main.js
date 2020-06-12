@@ -3,6 +3,7 @@
 //   $(this).tab('show');
 // });
 
+// Nav scrolling shrink animation on scroll-----------start
 window.addEventListener('scroll', function () {
   let header = document.querySelector('nav');
   // let items = document.querySelectorAll('.items')
@@ -10,9 +11,9 @@ window.addEventListener('scroll', function () {
   header.classList.toggle('nav-scrolling-active', windowPosition);
   // items.classList.toggle('items-scrolling-active', windowPosition);
 });
+// ----------------------------------------------------end
 
-//login and regist js
-
+//login and regist js----------------------------------start
 const inputs = document.querySelectorAll(".input");
 
 
@@ -33,3 +34,4 @@ inputs.forEach(input => {
 	input.addEventListener("focus", addcl);
 	input.addEventListener("blur", remcl);
 });
+// ------------------------------------------------end

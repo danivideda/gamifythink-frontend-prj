@@ -93,8 +93,8 @@
     height: unset;
 
     #visi-flower {
-      bottom: 0;
-      height: 100%;
+      top: 0;
+      height: 103%;
       left: -55%;
     }
 
@@ -124,6 +124,27 @@
             font-size: 1.3rem;
           }
         }
+      }
+    }
+  }
+
+  #testimoni {
+
+    #testi-flower {
+      left: 0;
+      width: 100%;
+    }
+
+    .lead-heading {
+      margin-top: 25%;
+      font-size: 2rem;
+    }
+
+    .cards {
+
+      .card-item {
+        width: 100vw;
+        
       }
     }
   }

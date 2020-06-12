@@ -289,7 +289,6 @@ nav {
 
 #testimoni {
   position: relative;
-  min-height: 700px;
   overflow: hidden;
 
   #testi-flower {
@@ -303,18 +302,15 @@ nav {
     color: $redish-light;
     font-size: 2.4rem;
     margin-bottom: 1.5rem;
-    margin-top: 10%;
+    margin-top: 3.4rem;
   }
 
   .cards {
     display: grid;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     width: 100%;
-    grid-template-columns: repeat(6, 500px);
-    padding: 1rem 2rem;
-    margin: initial 2rem;
+    grid-template-columns: repeat(6, auto);
+    padding: 1rem 0rem;
+    margin: 2rem 0;
     overflow-x: scroll;
     scrollbar-width: none; /* scrollbar hide for firefox*/
     &::-webkit-scrollbar { /* hide scrollbar for Chrome, safari, Opera*/
@@ -323,28 +319,60 @@ nav {
     -ms-overflow-style: none; /* hide scrollbar for IE and Edge*/
 
     .card-item { 
-      padding-right: 2rem;
-
-      .border {
+      padding: 0 2rem;
+      width: 500px;
+      
+      .custom-border {
+        border: none;
+        position: relative;
         border-radius: 1rem;
         box-shadow: 6px 0px 8px rgba(0, 0, 0, 0.25);
         padding: 2rem;
-      }
+        background-color: #fff;
 
-      .testimonial {
-        width: 100%;
-        padding: 0 2rem;
-        margin-bottom: 1.3rem;
-        color: $redish-light;
-        font-size: 2rem;
-      }
+        #quote {
+          position: absolute;
+          top: 1rem;
+          left: 1rem;
+          height: 20px;
+        }
 
-      .footer {
-        p {
-          margin: 0;
+        .testimonial {
+          width: 100%;
+          padding: 0 2rem;
+          margin-bottom: 1.3rem;
+          color: $blue-dark;
+          font-size: 1.5rem;
+        }
+  
+        .footer {
+          p {
+            margin: 0;
+            text-align: right;
+  
+            &.name {
+              font-size: 0.9rem;
+            }
+  
+            &.details {
+              font-size: 0.7rem;
+              color: $redish-light;
+            }
+          }
         }
       }
     }
+  }
+}
+
+#contact {
+  position: relative;
+  height: 768px;
+
+  .lead-heading {
+    margin: 0 auto;
+    color: $blue-dark;
+    font-size: 2rem;
   }
 }
 

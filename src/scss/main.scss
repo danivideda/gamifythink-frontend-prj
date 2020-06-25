@@ -374,6 +374,19 @@ nav {
     color: $blue-dark;
     font-size: 2rem;
   }
+
+  .main {
+    top: 20%;
+  }
+
+  .media {
+    position: absolute;
+    bottom: 35px;
+
+    div {
+      width: 236px;
+    }
+  }
 }
 
 footer {

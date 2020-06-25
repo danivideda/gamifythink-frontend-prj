@@ -148,6 +148,25 @@
       }
     }
   }
+
+  #contact {
+    .main {
+      top: 0;
+    }
+
+    .media {
+      bottom: 0;
+      div {
+        margin: 10px 0;
+        width: 120px;
+
+        .text-heading {
+          font-size: 1.2rem;
+          padding: 0.3rem 0.5rem;
+        }
+      }
+    }
+  }
 }
 
 // Small devices (landscape phones, less than 768px)

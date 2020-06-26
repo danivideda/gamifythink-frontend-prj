@@ -367,7 +367,7 @@ nav {
 
 #contact {
   position: relative;
-  height: 768px;
+  // height: 800px;
 
   .lead-heading {
     margin: 0 auto;
@@ -376,15 +376,25 @@ nav {
   }
 
   .main {
-    top: 20%;
+    top: 0;
+
+    a {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   .media {
-    position: absolute;
-    bottom: 35px;
+    // position: absolute;
+    // bottom: 0;
 
     div {
       width: 236px;
+
+      h2 {
+        font-size: 1rem;
+      }
     }
   }
 }

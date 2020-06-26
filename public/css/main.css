@@ -260,19 +260,21 @@ nav {
             color: #FE5722; }
 
 #contact {
-  position: relative;
-  height: 768px; }
+  position: relative; }
   #contact .lead-heading {
     margin: 0 auto;
     color: #3B749F;
     font-size: 2rem; }
   #contact .main {
-    top: 20%; }
-  #contact .media {
-    position: absolute;
-    bottom: 35px; }
-    #contact .media div {
-      width: 236px; }
+    top: 0; }
+    #contact .main a {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%); }
+  #contact .media div {
+    width: 236px; }
+    #contact .media div h2 {
+      font-size: 1rem; }
 
 footer {
   display: block;
@@ -368,6 +370,8 @@ footer {
     width: 100vw; }
   #contact .main {
     top: 0; }
+    #contact .main img {
+      width: 100%; }
   #contact .media {
     bottom: 0; }
     #contact .media div {
